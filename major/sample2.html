@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Even or Odd number</h2>
+
+    <p>Enter a number:</p>
+    <input type="text" id="demo2" />
+    <button type="button" onclick="evenFunction()">submit</button>    
+    <p id="demo"></p>
+
+    <script>
+      function evenFunction() {
+        var oddEven = (document.getElementById("demo2").value);
+        if (oddEven % 2 === 0) {
+          document.getElementById("demo").innerHTML = "Even number";
+        } else {
+          document.getElementById("demo").innerHTML = "Odd number";
+        }
+      }
+    </script>
+  </body>
+</html>
